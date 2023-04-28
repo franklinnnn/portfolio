@@ -11,7 +11,7 @@ const Work = () => {
   const { projectDetails, setProjectDetails } = useContext(MainContext);
 
   const { detailRef, isDetailComponentVisible, setIsDetailComponentVisible } =
-    detailComponentVisible(false);
+    DetailComponentVisible(false);
 
   return (
     <AnimatePresence>
@@ -63,7 +63,7 @@ const Work = () => {
   );
 };
 
-const detailComponentVisible = (initialVisible) => {
+const DetailComponentVisible = (initialVisible) => {
   const [isDetailComponentVisible, setIsDetailComponentVisible] =
     useState(initialVisible);
 

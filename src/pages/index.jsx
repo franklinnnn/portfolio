@@ -13,7 +13,7 @@ const Home = () => {
     useContext(MainContext);
 
   const { detailRef, isDetailComponentVisible, setIsDetailComponentVisible } =
-    detailComponentVisible(false);
+    DetailComponentVisible(false);
   return (
     <AnimatePresence>
       <motion.div
@@ -98,7 +98,7 @@ const Home = () => {
   );
 };
 
-const detailComponentVisible = (initialVisible) => {
+const DetailComponentVisible = (initialVisible) => {
   const [isDetailComponentVisible, setIsDetailComponentVisible] =
     useState(initialVisible);
 
