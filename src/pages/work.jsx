@@ -25,7 +25,7 @@ const Work = () => {
       >
         <div className="flex flex-col gap-2 my-6">
           <h1 className="text-4xl font-semibold text-secondary">Work</h1>
-          <p>Projects I've been working on</p>
+          <p>Projects I&#39;ve been working on</p>
         </div>
         <div>
           {projects
