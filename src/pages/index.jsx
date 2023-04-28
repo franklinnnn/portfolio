@@ -38,8 +38,8 @@ const Home = () => {
             </div>
             <div className="w-4/5">
               <p className="mb-2">
-                Hello, I'm Franklin. I'm trying to be a web developer. Currently
-                a nurse working in mental health.
+                Hello, I&#39;m Franklin. I&#39;m trying to be a web developer.
+                Currently a nurse working in mental health.
               </p>
               <Link
                 href="/about"
