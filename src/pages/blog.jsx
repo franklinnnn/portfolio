@@ -4,8 +4,7 @@ import BlogCard from "@/components/blogCard";
 import { AnimatePresence, motion } from "framer-motion";
 
 const graphcms = new GraphQLClient(
-  // process.env.NEXT_PUBLIC_HYGRAPH_CMS_ENDPOINT
-  "https://api-us-west-2.hygraph.com/v2/clczis6234h0001ukhnlr6jmk/master"
+  process.env.NEXT_PUBLIC_HYGRAPH_CMS_ENDPOINT
 );
 
 const QUERY = gql`

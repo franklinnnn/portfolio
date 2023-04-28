@@ -3,6 +3,7 @@ import { FaCodepen, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import profileImg from "../assets/profileImg.jpg";
 import { BsArrowUpRight } from "react-icons/bs";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
             </p>
             <div className="flex gap-6 itmes-center">
               <div className="w-32 h-32">
-                <img
+                <Image
                   src={profileImg.src}
                   alt="profile image"
                   className="object-cover w-full h-full rounded-full"

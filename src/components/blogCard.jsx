@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
@@ -9,7 +10,7 @@ const BlogCard = ({ post }) => {
       className="group flex gap-2 my-6 w-full h-48"
     >
       <div className="w-3/5 overflow-hidden rounded-sm">
-        <img
+        <Image
           src={post.coverPhoto.url}
           alt={post.title}
           className="object-cover w-full"
