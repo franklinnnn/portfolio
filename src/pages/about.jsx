@@ -21,8 +21,8 @@ const About = () => {
           </h1>
           <div className="flex flex-col gap-2 my-4">
             <p>
-              Hello 👋, I'm Franklin. I'm trying to be a web developer.
-              Currently a nurse working in mental health.
+              Hello, I'm Franklin. I'm trying to be a web developer. Currently a
+              nurse working in mental health.
             </p>
             <div className="flex gap-6 itmes-center">
               <div className="w-32 h-32">
