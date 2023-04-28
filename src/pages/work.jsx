@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import projects from "./work/projects";
+import projects from "../projects";
 import ProjectCard from "@/components/projectCard";
 import { AnimatePresence, motion } from "framer-motion";
 import ProjectDetails from "@/components/projectDetails";
