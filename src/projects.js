@@ -1,13 +1,13 @@
-import redditSimpleImg from "../../assets/work/reddit-simple.png";
-import todoContactImg from "../../assets/work/todo-contact.png";
-import flashcardsImg from "../../assets/work/flashcards.png";
-import endlessRollingImg from "../../assets/work/endless-rolling.png";
-import fChatImg from "../../assets/work/f-chat.png";
-import recipeReceiptImg from "../../assets/work/recipe-receipt.png";
-import stronkFitnessImg from "../../assets/work/stronk-fitness.png";
-import findWordsImg from "../../assets/work/find-words.png";
-import aiImagerImg from "../../assets/work/ai-imager.png";
-import weatherPlusNews from "../../assets/work/weather-news.png";
+import redditSimpleImg from "./assets/work/reddit-simple.png";
+import todoContactImg from "./assets/work/todo-contact.png";
+import flashcardsImg from "./assets/work/flashcards.png";
+import endlessRollingImg from "./assets/work/endless-rolling.png";
+import fChatImg from "./assets/work/f-chat.png";
+import recipeReceiptImg from "./assets/work/recipe-receipt.png";
+import stronkFitnessImg from "./assets/work/stronk-fitness.png";
+import findWordsImg from "./assets/work/find-words.png";
+import aiImagerImg from "./assets/work/ai-imager.png";
+import weatherPlusNews from "./assets/work/weather-news.png";
 
 const work = [
   {

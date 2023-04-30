@@ -16,7 +16,7 @@ const Home = () => {
     DetailComponentVisible(false);
   return (
     <AnimatePresence>
-      <motion.div
+      <motion.article
         className="p-4 text-lg"
         key="home"
         initial={{ opacity: 0, x: -10 }}
@@ -24,7 +24,7 @@ const Home = () => {
         exit={{ opacity: 0, x: 10 }}
         ref={detailRef}
       >
-        <div className="flex flex-col gap-2 my-6">
+        <section className="flex flex-col gap-2 my-6">
           <h1 className="text-4xl font-semibold text-secondary">
             Franklin Assa
           </h1>
@@ -50,8 +50,8 @@ const Home = () => {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="mt-16">
+        </section>
+        <section className="mt-16">
           <h2 className="text-2xl font-semibold">Latest projects</h2>
           <div>
             {projects
@@ -73,8 +73,8 @@ const Home = () => {
           >
             All projects <CgArrowLongRight className="text-2xl" />
           </Link>
-        </div>
-      </motion.div>
+        </section>
+      </motion.article>
 
       {isDetailComponentVisible && (
         <motion.div
@@ -83,6 +83,7 @@ const Home = () => {
           initial={{ opacity: 1, width: 0, height: "100vh" }}
           animate={{ opacity: 1, width: "615px", height: "100vh" }}
           exit={{ opacity: 1, width: 0, height: "100vh" }}
+          role="container"
         >
           <div
             className="w-full flex justify-end items-center gap-2 whitespace-nowrap cursor-pointer hover:underline"

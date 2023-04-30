@@ -10,7 +10,7 @@ const BlogCard = ({ post }) => {
       className="group flex gap-2 my-6 w-full h-48"
     >
       <div className="w-3/5 overflow-hidden rounded-sm">
-        <Image
+        <img
           src={post.coverPhoto.url}
           alt={post.title}
           className="object-cover w-full"

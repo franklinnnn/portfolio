@@ -8,25 +8,27 @@ import Image from "next/image";
 const About = () => {
   return (
     <AnimatePresence>
-      <motion.div
+      <motion.article
         className="p-4 text-lg"
         key="page"
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 1, transition: { duration: 0.5 } }}
         exit={{ opacity: 0, x: 10 }}
       >
-        <div className="flex flex-col gap-2 my-6">
-          <h1 className="text-4xl font-semibold text-secondary">
-            Franklin Assa
-          </h1>
-          <div className="flex flex-col gap-2 my-4">
+        <section className="flex flex-col gap-2 my-6">
+          <header>
+            <h1 className="text-4xl font-semibold text-secondary">
+              Franklin Assa
+            </h1>
+          </header>
+          <section className="flex flex-col gap-2 my-4">
             <p>
               Hello, I&#39;m Franklin. I&#39;m trying to be a web developer.
               Currently a nurse working in mental health.
             </p>
-            <div className="flex gap-6 itmes-center">
+            <section className="flex gap-6 itmes-center">
               <div className="w-32 h-32">
-                <Image
+                <img
                   src={profileImg.src}
                   alt="profile image"
                   className="object-cover w-full h-full rounded-full"
@@ -41,7 +43,7 @@ const About = () => {
                   resume
                 </motion.a>
               </div>
-            </div>
+            </section>
             <p>
               I have been working in the health care field for 10 years, and I
               am ready for a change. I am a growth-focused individual, versatile
@@ -50,8 +52,8 @@ const About = () => {
               developing, implementing, and adopting new technologies to
               maximize software quality and produce innovative web applications.
             </p>
-          </div>
-          <div className="flex gap-6">
+          </section>
+          <section className="flex gap-6">
             <div className="flex gap-2 justify-between items-center border-2 border-slate-200 px-2 py-1 rounded-md hover:bg-primary hover:text-light duration-150 ease-in-out">
               <a
                 className="flex gap-2 items-center font-work"
@@ -82,11 +84,13 @@ const About = () => {
                 <BsArrowUpRight className="text-sm ml-4" />
               </a>{" "}
             </div>
-          </div>
-        </div>
+          </section>
+        </section>
 
-        <div className="flex flex-col gap-4 my-6 pt-6 border-t-2 border-slate-200">
-          <h2 className="text-xl font-semibold">Education</h2>
+        <section className="flex flex-col gap-4 my-6 pt-6 border-t-2 border-slate-200">
+          <header>
+            <h2 className="text-xl font-semibold">Education</h2>
+          </header>
           <div>
             <p className="flex items-center gap-2">
               <span className="font-semibold">
@@ -113,10 +117,12 @@ const About = () => {
               medications and documented daily activities.
             </p>
           </div>
-        </div>
+        </section>
 
-        <div className="flex flex-col gap-4 my-6 pt-6 border-t-2 border-slate-200">
-          <h2 className="text-xl font-semibold">Experience</h2>
+        <section className="flex flex-col gap-4 my-6 pt-6 border-t-2 border-slate-200">
+          <header>
+            <h2 className="text-xl font-semibold">Experience</h2>
+          </header>
           <div>
             <p className="flex flex-col">
               <span className="font-semibold">
@@ -145,10 +151,12 @@ const About = () => {
               organized and scheduled to staff units.
             </p>
           </div>
-        </div>
+        </section>
 
-        <div className="flex flex-col gap-4 my-6 pt-6 border-t-2 border-slate-200">
-          <h2 className="text-xl font-semibold">Certification</h2>
+        <section className="flex flex-col gap-4 my-6 pt-6 border-t-2 border-slate-200">
+          <header>
+            <h2 className="text-xl font-semibold">Certification</h2>
+          </header>
           <div>
             <p className="flex flex-col">
               <span className="font-semibold">
@@ -161,8 +169,8 @@ const About = () => {
               Some projects from this course can be seen in my works page.
             </p>
           </div>
-        </div>
-      </motion.div>
+        </section>
+      </motion.article>
     </AnimatePresence>
   );
 };

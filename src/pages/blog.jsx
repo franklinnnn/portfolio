@@ -63,16 +63,18 @@ const Blog = () => {
 
   return (
     <AnimatePresence>
-      <motion.div
+      <motion.article
         className="p-4 text-lg"
         key="blog"
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 1, transition: { duration: 0.5 } }}
         exit={{ opacity: 0, x: 10 }}
       >
-        <div className="flex flex-col gap-2 my-6">
-          <h1 className="text-4xl font-semibold text-secondary">Blog</h1>
-          <div>
+        <section className="flex flex-col gap-2 my-6">
+          <header>
+            <h1 className="text-4xl font-semibold text-secondary">Blog</h1>
+          </header>
+          <section>
             {/* {filter ? (
                 <div>
                   <div>
@@ -92,9 +94,9 @@ const Blog = () => {
                 )}
               </>
             ))}
-          </div>
-        </div>
-      </motion.div>
+          </section>
+        </section>
+      </motion.article>
     </AnimatePresence>
   );
 };

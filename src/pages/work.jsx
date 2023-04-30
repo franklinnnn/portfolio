@@ -15,7 +15,7 @@ const Work = () => {
 
   return (
     <AnimatePresence>
-      <motion.div
+      <motion.article
         className="relative p-4 text-lg"
         key="page"
         initial={{ opacity: 0, x: -10 }}
@@ -23,11 +23,11 @@ const Work = () => {
         exit={{ opacity: 0, x: 10 }}
         ref={detailRef}
       >
-        <div className="flex flex-col gap-2 my-6">
+        <header className="flex flex-col gap-2 my-6">
           <h1 className="text-4xl font-semibold text-secondary">Work</h1>
           <p>Projects I&#39;ve been working on</p>
-        </div>
-        <div>
+        </header>
+        <section>
           {projects
             .map((project) => (
               <ProjectCard
@@ -38,19 +38,20 @@ const Work = () => {
               />
             ))
             .reverse()}
-        </div>
-      </motion.div>
+        </section>
+      </motion.article>
 
       {isDetailComponentVisible && (
         <motion.div
-          className="fixed top-0 p-2 w-[615px] max-w-[615px] h-screen z-10 bg-light border-r-2 border-slate-500/20 overflow-hidden"
+          className="fixed top-0 p-4 w-[615px] max-w-[615px] h-screen z-10 bg-light border-r-2 border-slate-500/20 overflow-hidden"
           key="detail"
           initial={{ opacity: 1, width: 0, height: "100vh" }}
           animate={{ opacity: 1, width: "615px", height: "100vh" }}
           exit={{ opacity: 1, width: 0, height: "100vh" }}
+          role="container"
         >
           <div
-            className="w-full flex justify-end items-center gap-2 whitespace-nowrap cursor-pointer hover:underline"
+            className="absolute top-2 right-2 w-full flex justify-end items-center gap-2 whitespace-nowrap cursor-pointer hover:underline"
             onClick={() => setIsDetailComponentVisible(false)}
           >
             <CgArrowLongLeft />

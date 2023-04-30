@@ -35,7 +35,11 @@ export default function App({ Component, pageProps }) {
         value={{ projectDetails, setProjectDetails, activePage, setActivePage }}
       >
         <div className="flex justify-center w-full bg-light">
-          <div className="flex max-w-[768px] h-full min-h-screen text-main-text box-border">
+          <div
+            className="flex max-w-[768px] h-full min-h-screen text-main-text box-border"
+            role="container"
+            s
+          >
             <nav className="w-1/5">
               <Nav />
             </nav>

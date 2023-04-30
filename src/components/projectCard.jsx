@@ -12,7 +12,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="group flex gap-2 my-6 w-full h-48" key={project.title}>
+    <section className="group flex gap-2 my-6 w-full h-48" key={project.title}>
       <a
         className="w-3/5 overflow-hidden rounded-sm"
         href={project.url}
@@ -40,7 +40,7 @@ const ProjectCard = ({
           See more <BsArrowUpRight />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
