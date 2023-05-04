@@ -32,7 +32,7 @@ const Home = () => {
             <div className="w-32 h-32">
               <img
                 src={profileImg.src}
-                alt="profile image"
+                alt="my profile image"
                 className="object-cover w-full h-full rounded-full"
               />
             </div>

@@ -20,7 +20,7 @@ const ProjectCard = ({
       >
         <img
           src={project.img}
-          alt={project.title}
+          alt={project.desc}
           className="object-cover w-full"
         />
       </a>

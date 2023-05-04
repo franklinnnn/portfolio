@@ -1,20 +1,39 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
+import { CgSpinner } from "react-icons/cg";
+import { motion } from "framer-motion";
 
 const BlogCard = ({ post }) => {
+  const [loading, setLoading] = useState(false);
   return (
     <Link
       href={`/blog/${post.slug}`}
       className="group flex gap-2 my-6 w-full h-48"
     >
       <div className="w-3/5 overflow-hidden rounded-sm">
-        <img
-          src={post.coverPhoto.url}
-          alt={post.title}
-          className="object-cover w-full"
-        />
+        <div className="w-full h-full flex justify-center items-center ">
+          {loading ? (
+            <motion.span
+              className="text-4xl text-primary"
+              initial={{ rotate: 0 }}
+              animate={{
+                rotate: 360,
+                transition: { duration: 4, repeat: Infinity },
+              }}
+            >
+              <CgSpinner />
+            </motion.span>
+          ) : (
+            <img
+              src={post.coverPhoto.url}
+              alt={post.title}
+              className="object-cover w-full"
+              onload={() => setLoading(false)}
+            ></img>
+          )}
+        </div>
       </div>
       <div className="flex flex-col gap-2 justify-between w-2/5">
         <div className="text-xl">

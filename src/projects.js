@@ -100,7 +100,7 @@ const work = [
   {
     title: "AI Imager",
     img: aiImagerImg.src,
-    url: "https://ai-image-app.vercel.app/",
+    url: "https://ai-imager.vercel.app/",
     repository: "https://github.com/franklinnnn/ai-image-app",
     technologies: ["MongoDB", "Express", "React", "Node", "Tailwind"],
     desc: "AI image generator app using OpenAI. Generated images can be posted to a gallery.",
