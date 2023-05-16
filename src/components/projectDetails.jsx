@@ -4,7 +4,7 @@ import { BiLinkExternal } from "react-icons/bi";
 
 const ProjectDetails = ({ project }) => {
   return (
-    <article className="w-full max-sm:w-screen h-screen p-6 max-sm:mt-4 overflow-scroll [&::-webkit-scrollbar]:hidden">
+    <article className="w-full max-sm:w-screen h-screen p-6 pb-10 max-sm:mt-4 overflow-scroll [&::-webkit-scrollbar]:hidden">
       <header>
         <a
           href={project.url}
@@ -39,10 +39,10 @@ const ProjectDetails = ({ project }) => {
         <h2 className="text-secondary text-2xl font-semibold">About</h2>
         <p>{project.about}</p>
         <div
-          className="flex flex-col gap-4 my-6 text-sm text-secondary font-semibold"
+          className="flex flex-col gap-4 my-6 text-sm text-secondary font-semibold whitespace-pre-wrap"
           role="links container"
         >
-          <p className="flex gap-4">
+          <p className="flex gap-4 max-sm:flex-col max-sm:gap-1">
             Website:
             <a
               href={project.url}
@@ -52,7 +52,7 @@ const ProjectDetails = ({ project }) => {
               {project.url}
             </a>
           </p>
-          <p className="flex gap-4">
+          <p className="flex gap-4 max-sm:flex-col max-sm:gap-1">
             Repository:
             <a
               href={project.repository}

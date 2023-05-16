@@ -78,20 +78,23 @@ const Home = () => {
 
       {isDetailComponentVisible && (
         <motion.div
-          className="fixed top-0 p-2 w-[615px] max-w-[615px] h-screen z-10 bg-light border-r-2 border-slate-500/10 overflow-hidden"
+          className="fixed top-0 bottom-0 md:p-4 md:max-w-[615px]  z-10 bg-light border-r-2 border-slate-500/20 overflow-hidden"
           key="detail"
           initial={{ opacity: 1, width: 0, height: "100vh" }}
           animate={{ opacity: 1, width: "615px", height: "100vh" }}
           exit={{ opacity: 1, width: 0, height: "100vh" }}
           role="container"
         >
-          <div
-            className="w-full flex justify-end items-center gap-2 whitespace-nowrap cursor-pointer hover:underline"
+          <motion.div
+            className="fixed md:absolute top-2 right-2 w-full flex justify-end items-center gap-2 bg-light whitespace-nowrap cursor-pointer hover:underline"
             onClick={() => setIsDetailComponentVisible(false)}
+            initial={{ opacity: 0, width: 0 }}
+            animate={{ opacity: 1, width: "615px" }}
+            exit={{ opacity: 0, width: 0 }}
           >
             <CgArrowLongLeft />
             Back to projects
-          </div>
+          </motion.div>
           <ProjectDetails project={projectDetails} />
         </motion.div>
       )}

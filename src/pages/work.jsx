@@ -16,7 +16,7 @@ const Work = () => {
   return (
     <AnimatePresence>
       <motion.article
-        className="relative p-4 text-lg"
+        className="relative p-4 text-lg overflow-x-hidden"
         key="page"
         initial={{ opacity: 0, x: -10 }}
         animate={{ opacity: 1, x: 1, transition: { duration: 0.5 } }}
@@ -43,7 +43,7 @@ const Work = () => {
 
       {isDetailComponentVisible && (
         <motion.div
-          className="fixed top-0 bottom-0 md:p-4 md:max-w-[615px]  z-10 bg-light border-r-2 border-slate-500/20 overflow-hidden"
+          className="fixed top-0 bottom-0 md:p-4 md:max-w-[615px] h-screen z-10 bg-light border-r-2 border-slate-500/20 overflow-hidden"
           key="detail"
           initial={{ opacity: 1, width: 0, height: "100vh" }}
           animate={{ opacity: 1, width: "615px", height: "100vh" }}
@@ -51,7 +51,7 @@ const Work = () => {
           role="container"
         >
           <motion.div
-            className="fixed md:absolute top-2 right-2 w-full flex justify-end items-center gap-2 whitespace-nowrap cursor-pointer hover:underline"
+            className="fixed md:absolute top-2 right-2 w-full flex justify-end items-center gap-2 bg-light whitespace-nowrap cursor-pointer hover:underline"
             onClick={() => setIsDetailComponentVisible(false)}
             initial={{ opacity: 0, width: 0 }}
             animate={{ opacity: 1, width: "615px" }}
