@@ -66,6 +66,8 @@ export async function getStaticProps({ params }) {
 export default function BlogPost({ post }) {
   const { setActivePage } = useContext(MainContext);
   const router = useRouter();
+
+  console.log(post.content.html);
   return (
     <AnimatePresence>
       <motion.article
@@ -96,7 +98,7 @@ export default function BlogPost({ post }) {
         </section>
         <section
           dangerouslySetInnerHTML={{ __html: post.content.html }}
-          className="flex flex-col gap-4 pb-8 text-base [&>p>a]:text-fuchsia-600"
+          className="flex flex-col gap-4 pb-8 text-base [&>p>a]:text-fuchsia-600 [&>iframe]:w-full"
         ></section>
         <footer
           className="w-full flex justify-end items-center gap-2 text-base whitespace-nowrap cursor-pointer hover:underline"

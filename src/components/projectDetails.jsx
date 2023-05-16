@@ -4,7 +4,7 @@ import { BiLinkExternal } from "react-icons/bi";
 
 const ProjectDetails = ({ project }) => {
   return (
-    <article className="w-full h-full p-6 overflow-hidden">
+    <article className="w-full max-sm:w-screen h-screen p-6 max-sm:mt-4 overflow-scroll [&::-webkit-scrollbar]:hidden">
       <header>
         <a
           href={project.url}

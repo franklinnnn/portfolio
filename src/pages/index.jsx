@@ -28,15 +28,15 @@ const Home = () => {
           <h1 className="text-4xl font-semibold text-secondary">
             Franklin Assa
           </h1>
-          <div className="flex gap-4">
-            <div className="w-32 h-32">
+          <div className="flex max-sm:flex-col gap-4">
+            <div className="w-32 h-32 ">
               <img
                 src={profileImg.src}
                 alt="my profile image"
                 className="object-cover w-full h-full rounded-full"
               />
             </div>
-            <div className="w-4/5">
+            <div className="sm:w-4/5">
               <p className="mb-2">
                 Hello, I&#39;m Franklin. I&#39;m trying to be a web developer.
                 Currently a nurse working in mental health.

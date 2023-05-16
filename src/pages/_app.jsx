@@ -36,14 +36,14 @@ export default function App({ Component, pageProps }) {
       >
         <div className="flex justify-center w-full bg-light">
           <div
-            className="flex max-w-[768px] h-full min-h-screen text-main-text box-border"
+            className="relative flex md:max-w-[768px] max-sm:w-full max-sm:flex-col h-full min-h-screen text-main-text box-border"
             role="container"
             s
           >
-            <nav className="w-1/5">
+            <nav className="md:w-1/5">
               <Nav />
             </nav>
-            <main className="w-4/5 min-w-[615px] border-l-2 border-slate-500/10">
+            <main className="w-full md:min-w-[615px] border-l-2 border-slate-500/10">
               <Component {...pageProps} />
             </main>
           </div>

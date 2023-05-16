@@ -27,7 +27,7 @@ const About = () => {
               Currently a nurse working in mental health.
             </p>
             <section className="flex gap-6 itmes-center">
-              <div className="w-32 h-32">
+              <div className="w-32 h-32 max-sm:w-24 max-sm:h-24">
                 <img
                   src={profileImg.src}
                   alt="profile image"
@@ -53,7 +53,7 @@ const About = () => {
               maximize software quality and produce innovative web applications.
             </p>
           </section>
-          <section className="flex gap-6">
+          <section className="flex gap-6 max-sm:flex-col">
             <div className="flex gap-2 justify-between items-center border-2 border-slate-200 px-2 py-1 rounded-md hover:bg-primary hover:text-light duration-150 ease-in-out">
               <a
                 className="flex gap-2 items-center font-work"

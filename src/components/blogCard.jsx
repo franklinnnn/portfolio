@@ -10,9 +10,9 @@ const BlogCard = ({ post }) => {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex gap-2 my-6 w-full h-48"
+      className="group flex max-sm:flex-col gap-2 md:my-6 my-10 w-full md:h-48 hover:bg-slate-500/10"
     >
-      <div className="w-3/5 overflow-hidden rounded-sm">
+      <div className="md:w-3/5 max-sm:h-48 overflow-hidden rounded-sm">
         <div className="w-full h-full flex justify-center items-center ">
           {loading ? (
             <motion.span
@@ -29,19 +29,19 @@ const BlogCard = ({ post }) => {
             <img
               src={post.coverPhoto.url}
               alt={post.title}
-              className="object-cover w-full"
+              className="object-cover w-full h-full"
               onload={() => setLoading(false)}
             ></img>
           )}
         </div>
       </div>
-      <div className="flex flex-col gap-2 justify-between w-2/5">
+      <div className="flex flex-col gap-2 justify-between md:w-2/5">
         <div className="text-xl">
           <h2 className="font-semibold group-hover:text-primary">
             {post.title}
           </h2>
-          <h3 className="text-sm font-work">
-            <span className="mr-1">{post.datePublished}</span>
+          <div className="flex items-center gap-1 text-sm font-work">
+            <span className="">{post.datePublished}</span>
             {post.tags.map((tag) => (
               <span
                 key={tag}
@@ -50,7 +50,7 @@ const BlogCard = ({ post }) => {
                 {tag}
               </span>
             ))}
-          </h3>
+          </div>
         </div>
         <p
           dangerouslySetInnerHTML={{
@@ -58,7 +58,7 @@ const BlogCard = ({ post }) => {
           }}
           className="text-sm"
         ></p>
-        <p className="flex items-center justify-end gap-2 text-right hover:text-primary hover:cursor-pointer hover:underline">
+        <p className="flex items-center justify-start md:justify-end gap-2 text-right hover:text-primary hover:cursor-pointer hover:underline">
           Read more <BsArrowUpRight />
         </p>
       </div>
