@@ -54,33 +54,39 @@ const About = () => {
             </p>
           </section>
           <section className="flex gap-6 max-sm:flex-col">
-            <div className="flex gap-2 justify-between items-center border-2 border-slate-200 px-2 py-1 rounded-md hover:bg-primary hover:text-light duration-150 ease-in-out">
+            <div className="flex gap-2 justify-between items-center max-sm:w-1/2 border-2 border-slate-200 px-2 py-1 rounded-md hover:bg-primary hover:text-light duration-150 ease-in-out">
               <a
-                className="flex gap-2 items-center font-work"
+                className="flex gap-2 items-center font-work  w-full justify-between"
                 href="https://www.linkedin.com/in/franklin-assa/"
                 target="_blank"
               >
-                <FaLinkedinIn className="text-2xl" /> LinkedIn
+                <span className="flex gap-2">
+                  <FaLinkedinIn className="text-2xl" /> LinkedIn
+                </span>
                 <BsArrowUpRight className="text-sm ml-4" />
               </a>{" "}
             </div>
-            <div className="flex gap-2 justify-between items-center border-2 border-slate-200 px-2 py-1 rounded-md hover:bg-primary hover:text-light duration-150 ease-in-out">
+            <div className="flex gap-2 justify-between items-center max-sm:w-1/2 border-2 border-slate-200 px-2 py-1 rounded-md hover:bg-primary hover:text-light duration-150 ease-in-out">
               <a
-                className="flex gap-2 items-center font-work"
+                className="flex gap-2 items-center font-work  w-full justify-between"
                 href="https://github.com/franklinnnn"
                 target="_blank"
               >
-                <FaGithub className="text-2xl" /> GitHub
+                <span className="flex gap-2">
+                  <FaGithub className="text-2xl" /> GitHub
+                </span>
                 <BsArrowUpRight className="text-sm ml-4" />
               </a>
             </div>
-            <div className="flex gap-2 justify-between items-center border-2 border-slate-200 px-2 py-1 rounded-md hover:bg-primary hover:text-light duration-150 ease-in-out">
+            <div className="flex gap-2 justify-between items-center max-sm:w-1/2 border-2 border-slate-200 px-2 py-1 rounded-md hover:bg-primary hover:text-light duration-150 ease-in-out">
               <a
-                className="flex gap-2 items-center font-work"
+                className="flex gap-2 items-center font-work w-full justify-between"
                 href="https://codepen.io/franklinnnn/"
                 target="_blank"
               >
-                <FaCodepen className="text-2xl" /> CodePen
+                <span className="flex gap-2">
+                  <FaCodepen className="text-2xl" /> CodePen
+                </span>
                 <BsArrowUpRight className="text-sm ml-4" />
               </a>{" "}
             </div>
@@ -92,7 +98,7 @@ const About = () => {
             <h2 className="text-xl font-semibold">Education</h2>
           </header>
           <div>
-            <p className="flex items-center gap-2">
+            <p className="flex max-sm:flex-col items-start md:justify-between gap-2">
               <span className="font-semibold">
                 California State University, San Bernardino
               </span>{" "}
@@ -105,7 +111,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <p className="flex  items-center gap-2">
+            <p className="flex  max-sm:flex-col items-start md:justify-between gap-2">
               <span className="font-semibold">
                 San Bernardino Valley College
               </span>{" "}
