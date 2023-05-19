@@ -111,13 +111,13 @@ const work = [
   {
     title: "Weather + News",
     img: weatherPlusNews.src,
-    url: "https://weather-plus-news.vercel.app/",
+    url: "https://weatherplusnews.vercel.app/",
     repository: "https://github.com/franklinnnn/weather-app",
     technologies: ["React", "HTML", "CSS", "JavaScript"],
     desc: "Search for current weather of any city, along with the most recent and relevant news.",
     slug: "weather-plus-news",
     about:
-      "Weather + News is a single page app to search for current weather of a city. Additionally, the 5 day forecast and relevant news to the city can be displayed. Weather data uses the OpenWeather API and the news data uses the News API. Temperature units can be toggled between fahrenheit and celsius. The focus on this project was using multiple APIs and styling. I wanted to create a bold and bright look for the app with animations. Framer Motion was used for the animations, the first time I used an animation library.",
+      "Weather + News is a single page app to search for current weather of a city. Additionally, the 5 day forecast and relevant news to the city can be displayed. Weather data uses the OpenWeather API and the news data uses the News API. Temperature units can be toggled between fahrenheit and celsius. The focus on this project was using multiple APIs and styling. I wanted to create a bold and bright look for the app with animations. Framer Motion was used for the animations, the first time I used an animation library. Currently the News API free plan does not allow requests through the browser. A workaround for this is to use a backend, which I plan to implement in the future.",
   },
 ];
 
