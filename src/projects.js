@@ -8,6 +8,7 @@ import stronkFitnessImg from "./assets/work/stronk-fitness.png";
 import findWordsImg from "./assets/work/find-words.png";
 import aiImagerImg from "./assets/work/ai-imager.png";
 import weatherPlusNews from "./assets/work/weather-news.png";
+import summableImg from "./assets/work/summable.png";
 
 const work = [
   {
@@ -118,6 +119,17 @@ const work = [
     slug: "weather-plus-news",
     about:
       "Weather + News is a single page app to search for current weather of a city. Additionally, the 5 day forecast and relevant news to the city can be displayed. Weather data uses the OpenWeather API and the news data uses the News API. Temperature units can be toggled between fahrenheit and celsius. The focus on this project was using multiple APIs and styling. I wanted to create a bold and bright look for the app with animations. Framer Motion was used for the animations, the first time I used an animation library. Currently the News API free plan does not allow requests through the browser. A workaround for this is to use a backend, which I plan to implement in the future.",
+  },
+  {
+    title: "Summable",
+    img: summableImg.src,
+    url: "https://summable.vercel.app/",
+    repository: "https://github.com/franklinnnn/ai-summarizer-app",
+    technologies: ["React Redux", "HTML", "JavaScript", "Tailwind"],
+    desc: "Summarize long articles and webpages into short summaries.",
+    slug: "summable",
+    about:
+      "Summable is a free online summarizing tool that converts articles into a short summary. Simply enter the url of an article or webpage and enjoy a condensed summary of its contents. This tool is powered by the Article Extractor API, which leverages the OpenAI GPT-4 AI, combined with ScrapeNinja to improve its summarization process. Redux is used to create the api for fetching the results. History of articles summarized are locally stored. Styling with Tailwind and animations handled by Framer Motion. The goal for this project was to create a tool that I could deploy for wide use and possible monetize.",
   },
 ];
 

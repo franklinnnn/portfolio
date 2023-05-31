@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { BiLinkExternal } from "react-icons/bi";
 
