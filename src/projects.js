@@ -131,6 +131,17 @@ const work = [
     about:
       "Summable is a free online summarizing tool that converts articles into a short summary. Simply enter the url of an article or webpage and enjoy a condensed summary of its contents. This tool is powered by the Article Extractor API, which leverages the OpenAI GPT-4 AI, combined with ScrapeNinja to improve its summarization process. Redux is used to create the api for fetching the results. History of articles summarized are locally stored. Styling with Tailwind and animations handled by Framer Motion. The goal for this project was to create a tool that I could deploy for wide use and possible monetize.",
   },
+  {
+    title: "Portfolio",
+    img: summableImg.src,
+    url: "https://franklinnn.com",
+    repository: "https://github.com/franklinnnn/portfolio",
+    technologies: ["Next.js", "Tailwind"],
+    desc: "My personal portfolio website.",
+    slug: "portfolio",
+    about:
+      "My website. This is my personal portfolio where I showcase my projects. There is also a blog, which I don't use very much. This portfolio was built using Next.js and styled using Tailwind, with animations using Framer Motion. Blog content uses Hygraph. The blog was my first exposure with using a headless CMS, which is all integrated using Next.js. I will try to use the blog more.",
+  },
 ];
 
 export default work;
