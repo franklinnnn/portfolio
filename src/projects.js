@@ -9,7 +9,7 @@ import findWordsImg from "./assets/work/find-words.png";
 import aiImagerImg from "./assets/work/ai-imager.png";
 import weatherPlusNews from "./assets/work/weather-news.png";
 import summableImg from "./assets/work/summable.png";
-import portfolioImg from "./assets/work/portforlio.png";
+import portfolioImg from "./assets/work/portfolio.png";
 
 const work = [
   {
