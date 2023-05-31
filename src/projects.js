@@ -9,6 +9,7 @@ import findWordsImg from "./assets/work/find-words.png";
 import aiImagerImg from "./assets/work/ai-imager.png";
 import weatherPlusNews from "./assets/work/weather-news.png";
 import summableImg from "./assets/work/summable.png";
+import portforlioImg from "./assets/work/portforlio.png";
 
 const work = [
   {
@@ -133,7 +134,7 @@ const work = [
   },
   {
     title: "Portfolio",
-    img: summableImg.src,
+    img: portforlioImg.src,
     url: "https://franklinnn.com",
     repository: "https://github.com/franklinnnn/portfolio",
     technologies: ["Next.js", "Tailwind"],
