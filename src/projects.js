@@ -134,7 +134,7 @@ const work = [
   },
   {
     title: "Portfolio",
-    img: portforlioImg.src,
+    img: portfolioImg.src,
     url: "https://franklinnn.com",
     repository: "https://github.com/franklinnnn/portfolio",
     technologies: ["Next.js", "Tailwind"],
