@@ -10,6 +10,7 @@ import aiImagerImg from "./assets/work/ai-imager.png";
 import weatherPlusNews from "./assets/work/weather-news.png";
 import summableImg from "./assets/work/summable.png";
 import portfolioImg from "./assets/work/portfolio.png";
+import decksioImg from "./assets/work/decksio.png";
 
 const work = [
   {
@@ -142,6 +143,17 @@ const work = [
     slug: "portfolio",
     about:
       "My website. This is my personal portfolio where I showcase my projects. There is also a blog, which I don't use very much. This portfolio was built using Next.js and styled using Tailwind, with animations using Framer Motion. Blog content uses Hygraph. The blog was my first exposure with using a headless CMS, which is all integrated using Next.js. I will try to use the blog more.",
+  },
+  {
+    title: "Decksio",
+    img: decksioImg.src,
+    url: "https://decksio.vercel.app/",
+    repository: "https://github.com/franklinnnn/spotify-app",
+    technologies: ["React", "HTML", "JavaScript", "Tailwind"],
+    desc: "Track user top songs and artists, as well as build playlists.",
+    slug: "decksio",
+    about:
+      "Decksio is an app to keep track of your top listened tracks and artists, along with your most recently played tracks on Spotify. Top tracks and artists can be filtered from the last month, last 6 months, or all time. Discover new tracks by getting recommendations, then build new playlists to be saved on Spotify. Decksio was inspired by card collecting and deck building games. The tracks and artists are displayed as cards, with colors denoting the level of popularity. This app was built with React. Styling done with Tailwind and animations with Framer Motion. Decksio is currently under review from Spotify for extended quota deployment.",
   },
 ];
 
