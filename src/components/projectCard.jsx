@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 
@@ -21,10 +22,12 @@ const ProjectCard = ({
         href={project.url}
         target="_blank"
       >
-        <img
+        <Image
           src={project.img}
           alt={project.desc}
-          className="object-cover w-full h-full"
+          width={356}
+          height={192}
+          className="object-cover w-full h-full p-1"
         />
       </a>
       <div className="flex flex-col justify-between p-1 md:w-2/5">

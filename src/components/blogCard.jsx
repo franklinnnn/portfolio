@@ -26,12 +26,20 @@ const BlogCard = ({ post }) => {
               <CgSpinner />
             </motion.span>
           ) : (
-            <img
+            // <img
+            //   src={post.coverPhoto.url}
+            //   alt={post.title}
+            //   className="object-cover w-full h-full"
+            //   onload={() => setLoading(false)}
+            // ></img>
+            <Image
               src={post.coverPhoto.url}
               alt={post.title}
+              width={356}
+              height={192}
+              priority
               className="object-cover w-full h-full"
-              onload={() => setLoading(false)}
-            ></img>
+            />
           )}
         </div>
       </div>

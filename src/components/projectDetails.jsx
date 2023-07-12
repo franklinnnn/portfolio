@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { BiLinkExternal } from "react-icons/bi";
 
@@ -17,10 +18,11 @@ const ProjectDetails = ({ project }) => {
         </a>
         <p className="mt-2 mb-4">{project.desc}</p>
       </header>
-
-      <img
+      <Image
         src={project.img}
-        alt=""
+        alt="Project image"
+        width={535}
+        height={300}
         className="aspect-[16/9] object-cover object-top"
       />
 

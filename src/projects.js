@@ -11,6 +11,7 @@ import weatherPlusNews from "./assets/work/weather-news.png";
 import summableImg from "./assets/work/summable.png";
 import portfolioImg from "./assets/work/portfolio.png";
 import decksioImg from "./assets/work/decksio.png";
+import carzoImg from "./assets/work/carzo.png";
 
 const work = [
   {
@@ -154,6 +155,17 @@ const work = [
     slug: "decksio",
     about:
       "Decksio is an app to keep track of your top listened tracks and artists, along with your most recently played tracks on Spotify. Top tracks and artists can be filtered from the last month, last 6 months, or all time. Discover new tracks by getting recommendations, then build new playlists to be saved on Spotify. Decksio was inspired by card collecting and deck building games. The tracks and artists are displayed as cards, with colors denoting the level of popularity. This app was built with React. Styling done with Tailwind and animations with Framer Motion. Decksio is currently under review from Spotify for extended quota deployment.",
+  },
+  {
+    title: "CARZO",
+    img: carzoImg.src,
+    url: "https://carzo.vercel.app/",
+    repository: "https://github.com/franklinnnn/car-showcase-app",
+    technologies: ["Nextjs", "HTML", "TypeScript", "Tailwind"],
+    desc: "Car showcase and search for specifications and video reviews.",
+    slug: "carzo",
+    about:
+      "CARZO is a car showcase app that features specifications such as drivetrain and MPG, with included review videos searched on youtube. The app features a searchable catalogue of makes and models, with the an autocomplete on the manufacturer input field. The catalogue of cars can also be filtered by fuel type (gas or electric) and year. The car details are displayed on a modal that features several images of the car from different angles, and an option to show videos from the most relevant YouTube search. CARZO also features a url that updates on query string parameters. CARZO was built using Nextjs 13 and its new features such as the app directory, layouts, React Server Components, and more. The app is written in TypeScript, making it the first project with TypeScript. Tailwind was used for styling, and Headless UI was used for UI components such as the modals and inputs. The next steps are too add user logins and authentication using NextAuth and connect a database for users to save or favorite cars.",
   },
 ];
 
