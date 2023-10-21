@@ -14,7 +14,7 @@ const ProjectCard = ({
 
   return (
     <section
-      className="group flex max-sm:flex-col gap-2 md:my-6 my-8 w-full md:h-48 hover:bg-slate-500/10"
+      className="group flex max-sm:flex-col gap-2 md:my-6 my-8 w-full md:h-48 hover:bg-slate-500/10 transition"
       key={project.title}
     >
       <a
@@ -27,7 +27,7 @@ const ProjectCard = ({
           alt={project.desc}
           width={356}
           height={192}
-          className="object-cover w-full h-full p-1"
+          className="object-cover w-full h-full p-1 group-hover:p-0 transition"
         />
       </a>
       <div className="flex flex-col justify-between p-1 md:w-2/5">

@@ -12,6 +12,7 @@ import summableImg from "./assets/work/summable.png";
 import portfolioImg from "./assets/work/portfolio.png";
 import decksioImg from "./assets/work/decksio.png";
 import carzoImg from "./assets/work/carzo.png";
+import vidiotImg from "./assets/work/vidiot.png";
 
 const work = [
   {
@@ -150,7 +151,7 @@ const work = [
     img: decksioImg.src,
     url: "https://decksio.vercel.app/",
     repository: "https://github.com/franklinnnn/spotify-app",
-    technologies: ["React", "HTML", "JavaScript", "Tailwind"],
+    technologies: ["React", "JavaScript", "Tailwind", "Framer Motion"],
     desc: "Track user top songs and artists, as well as build playlists.",
     slug: "decksio",
     about:
@@ -161,11 +162,22 @@ const work = [
     img: carzoImg.src,
     url: "https://carzo.vercel.app/",
     repository: "https://github.com/franklinnnn/car-showcase-app",
-    technologies: ["Nextjs", "HTML", "TypeScript", "Tailwind"],
+    technologies: ["Nextjs", "TypeScript", "Tailwind", "Framer Motion"],
     desc: "Car showcase and search for specifications and video reviews.",
     slug: "carzo",
     about:
       "CARZO is a car showcase app that features specifications such as drivetrain and MPG, with included review videos searched on youtube. The app features a searchable catalogue of makes and models, with the an autocomplete on the manufacturer input field. The catalogue of cars can also be filtered by fuel type (gas or electric) and year. The car details are displayed on a modal that features several images of the car from different angles, and an option to show videos from the most relevant YouTube search. CARZO also features a url that updates on query string parameters. CARZO was built using Nextjs 13 and its new features such as the app directory, layouts, React Server Components, and more. The app is written in TypeScript, making it the first project with TypeScript. Tailwind was used for styling, and Headless UI was used for UI components such as the modals and inputs. The next steps are too add user logins and authentication using NextAuth and connect a database for users to save or favorite cars.",
+  },
+  {
+    title: "Vidiot",
+    img: vidiotImg.src,
+    url: "https://vidiotapp.vercel.app/",
+    repository: "https://github.com/franklinnnn/video-sharing-app",
+    technologies: ["Nextjs", "TypeScript", "Tailwind", "Firebase"],
+    desc: "Video focused social media where users can share, like, and comment on videos.",
+    slug: "vidiot",
+    about:
+      "Vidiot is my biggest project so far, incorporating everything I have learned from previous projects. This app is a full social media platform focused on video sharing. Users can upload videos with a caption to share, allowing other users to view the video as well as like/favorite and comment on the video. Users can also follow each other and will receive notifications when they are followed, or when their video is liked or commented on. User posts, followers, and liked posts are displayed in separate tabs in the user's profile page. Vidiot also features a search function, which searches both video posts and users for the query. Results of the search are separated into posts and users tabs. Vidiot was built using Nextjs 13 and its app directory, and written with TypeScript. I used this project to build upon the TypeScript skills I learned from the previous project. Database and user authentication is handled by Firebase, which I am familiar with from previous projects. Tailwind was used for styling, with Headless UI incorporated for various components. The app styling and layout was kept minimalist with a navigation bar on the top of the page, which moves to the bottom of the page on mobile devices. Dark/light mode can also be toggled. Next steps and future versions are to improve data fetching from the database, loading states, and search parameters.",
   },
 ];
 
