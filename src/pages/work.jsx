@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import ProjectDetails from "@/components/projectDetails";
 import { CgArrowLongLeft } from "react-icons/cg";
 import { MainContext } from "./_app";
+import { Dialog } from "@headlessui/react";
 
 const Work = () => {
   // const [projectDetails, setProjectDetails] = useState({});

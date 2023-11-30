@@ -13,6 +13,7 @@ import portfolioImg from "./assets/work/portfolio.png";
 import decksioImg from "./assets/work/decksio.png";
 import carzoImg from "./assets/work/carzo.png";
 import vidiotImg from "./assets/work/vidiot.png";
+import threeImg from "./assets/work/three-portfolio.png";
 
 const work = [
   {
@@ -178,6 +179,17 @@ const work = [
     slug: "vidiot",
     about:
       "Vidiot is my biggest project so far, incorporating everything I have learned from previous projects. This app is a full social media platform focused on video sharing. Users can upload videos with a caption to share, allowing other users to view the video as well as like/favorite and comment on the video. Users can also follow each other and will receive notifications when they are followed, or when their video is liked or commented on. User posts, followers, and liked posts are displayed in separate tabs in the user's profile page. Vidiot also features a search function, which searches both video posts and users for the query. Results of the search are separated into posts and users tabs. Vidiot was built using Nextjs 13 and its app directory, and written with TypeScript. I used this project to build upon the TypeScript skills I learned from the previous project. Database and user authentication is handled by Firebase, which I am familiar with from previous projects. Tailwind was used for styling, with Headless UI incorporated for various components. The app styling and layout was kept minimalist with a navigation bar on the top of the page, which moves to the bottom of the page on mobile devices. Dark/light mode can also be toggled. Next steps and future versions are to improve data fetching from the database, loading states, and search parameters.",
+  },
+  {
+    title: "3D Portfolio",
+    img: threeImg,
+    url: "https://3d-franklinnn.vercel.app/",
+    repository: "https://github.com/franklinnnn/3d-portfolio",
+    technologies: ["React", "ThreeJS", "Tailwind"],
+    desc: "My personal portfolio with interactive 3D models.",
+    slug: "3d",
+    about:
+      "Exploring more visual options with this project, where I implement 3D models and ThreeJS. The main page features a floating island model and an airplane that flies around it. The plane flies to different parts of the island, which leads to different pages of the portfolio. The models can be rotated to access the different parts by dragging the mouse or using the keyboard. This project was built with React and JavaScript, with ThreeJS to handle the 3D models. I had some experience with 3D models through the 3D rolling game I made in Unity, so manipulating the models through JavaScript wasn't too bad. The challenge was actually finding models that were free and easy to use, given this was another personal project. Other than that, styling was done with Tailwind as usual.",
   },
 ];
 
