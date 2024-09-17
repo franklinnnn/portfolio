@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import projects from "../projects";
+import { work } from "../projects";
 import ProjectCard from "@/components/projectCard";
 import { AnimatePresence, motion } from "framer-motion";
 import ProjectDetails from "@/components/projectDetails";
@@ -29,7 +29,7 @@ const Work = () => {
           <p>Projects I&#39;ve been working on</p>
         </header>
         <section>
-          {projects
+          {work
             .map((project) => (
               <ProjectCard
                 project={project}

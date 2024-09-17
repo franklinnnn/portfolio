@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { useContext, useEffect, useRef, useState } from "react";
 import { MainContext } from "./_app";
-import projects from "../projects";
+import { featuredWorks } from "../projects";
 import ProjectCard from "@/components/projectCard";
 import ProjectDetails from "@/components/projectDetails";
 
@@ -52,9 +52,9 @@ const Home = () => {
           </div>
         </section>
         <section className="mt-16">
-          <h2 className="text-2xl font-semibold">Latest projects</h2>
+          <h2 className="text-2xl font-semibold">Featured projects</h2>
           <div>
-            {projects
+            {featuredWorks
               .map((project) => (
                 <ProjectCard
                   project={project}

@@ -14,8 +14,9 @@ import decksioImg from "./assets/work/decksio.png";
 import carzoImg from "./assets/work/carzo.png";
 import vidiotImg from "./assets/work/vidiot.png";
 import threeImg from "./assets/work/three-portfolio.png";
+import pacePlaylistImg from "./assets/work/paceplaylist.png";
 
-const work = [
+export const work = [
   {
     title: "reddit simple",
     img: redditSimpleImg.src,
@@ -191,6 +192,51 @@ const work = [
     about:
       "Exploring more visual options with this project, where I implement 3D models and ThreeJS. The main page features a floating island model and an airplane that flies around it. The plane flies to different parts of the island, which leads to different pages of the portfolio. The models can be rotated to access the different parts by dragging the mouse or using the keyboard. This project was built with React and JavaScript, with ThreeJS to handle the 3D models. I had some experience with 3D models through the 3D rolling game I made in Unity, so manipulating the models through JavaScript wasn't too bad. The challenge was actually finding models that were free and easy to use, given this was another personal project. Other than that, styling was done with Tailwind as usual.",
   },
+  {
+    title: "PacePlaylist",
+    img: pacePlaylistImg,
+    url: "https://placeplaylist.vercel.app/",
+    repository: "https://github.com/franklinnnn/running-playlist-app",
+    technologies: ["NextJS", "Tailwind"],
+    desc: "Generate playlists tailored to specific running paces.",
+    slug: "paceplaylist",
+    about:
+      "Going back to a more compact project with easy to use libraries. This app is a playlist generator using Spotify's Web API, which I used previously on Decksio. It's a much smaller project with one main function, which is to generate playlists that have tracks within normal running tempo (around 150-180 BPM). Users are able to choose their pace, or further refine to a more specific tempo. The playlists can then be saved, either by creating a new playlist or adding to an exsisting playlist. I used NextJS, incorporating server-side rendering for faster data fetching from the Spotify API. I also used Tailwind for styling, and DaisyUI for UI components, which integrates with Tailwind.",
+  },
 ];
 
-export default work;
+export const featuredWorks = [
+  {
+    title: "Vidiot",
+    img: vidiotImg.src,
+    url: "https://vidiotapp.vercel.app/",
+    repository: "https://github.com/franklinnnn/video-sharing-app",
+    technologies: ["Nextjs", "TypeScript", "Tailwind", "Firebase"],
+    desc: "Video focused social media where users can share, like, and comment on videos.",
+    slug: "vidiot",
+    about:
+      "Vidiot is my biggest project so far, incorporating everything I have learned from previous projects. This app is a full social media platform focused on video sharing. Users can upload videos with a caption to share, allowing other users to view the video as well as like/favorite and comment on the video. Users can also follow each other and will receive notifications when they are followed, or when their video is liked or commented on. User posts, followers, and liked posts are displayed in separate tabs in the user's profile page. Vidiot also features a search function, which searches both video posts and users for the query. Results of the search are separated into posts and users tabs. Vidiot was built using Nextjs 13 and its app directory, and written with TypeScript. I used this project to build upon the TypeScript skills I learned from the previous project. Database and user authentication is handled by Firebase, which I am familiar with from previous projects. Tailwind was used for styling, with Headless UI incorporated for various components. The app styling and layout was kept minimalist with a navigation bar on the top of the page, which moves to the bottom of the page on mobile devices. Dark/light mode can also be toggled. Next steps and future versions are to improve data fetching from the database, loading states, and search parameters.",
+  },
+  {
+    title: "Summable",
+    img: summableImg.src,
+    url: "https://summable.vercel.app/",
+    repository: "https://github.com/franklinnnn/ai-summarizer-app",
+    technologies: ["React Redux", "HTML", "JavaScript", "Tailwind"],
+    desc: "Summarize long articles and webpages into short summaries.",
+    slug: "summable",
+    about:
+      "Summable is a free online summarizing tool that converts articles into a short summary. Simply enter the url of an article or webpage and enjoy a condensed summary of its contents. This tool is powered by the Article Extractor API, which leverages the OpenAI GPT-4 AI, combined with ScrapeNinja to improve its summarization process. Redux is used to create the api for fetching the results. History of articles summarized are locally stored. Styling with Tailwind and animations handled by Framer Motion. The goal for this project was to create a tool that I could deploy for wide use and possible monetize.",
+  },
+  {
+    title: "PacePlaylist",
+    img: pacePlaylistImg,
+    url: "https://placeplaylist.vercel.app/",
+    repository: "https://github.com/franklinnnn/running-playlist-app",
+    technologies: ["NextJS", "Tailwind"],
+    desc: "Generate playlists tailored to specific running paces.",
+    slug: "paceplaylist",
+    about:
+      "Going back to a more compact project with easy to use libraries. This app is a playlist generator using Spotify's Web API, which I used previously on Decksio. It's a much smaller project with one main function, which is to generate playlists that have tracks within normal running tempo (around 150-180 BPM). Users are able to choose their pace, or further refine to a more specific tempo. The playlists can then be saved, either by creating a new playlist or adding to an exsisting playlist. I used NextJS, incorporating server-side rendering for faster data fetching from the Spotify API. I also used Tailwind for styling, and DaisyUI for UI components, which integrates with Tailwind.",
+  },
+];
